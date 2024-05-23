@@ -4,7 +4,7 @@ import { useAuth } from '../context/AuthContext';
 import { AiOutlineMessage } from 'react-icons/ai';
 
 function Header() {
-    const { token, logout, role } = useAuth(); // Adjusted to use 'role' instead of 'isAdmin'
+    const { token, logout, role } = useAuth();
 
     return (
         <header>

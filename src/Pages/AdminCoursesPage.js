@@ -18,7 +18,7 @@
 //         const fetchCourses = async () => {
 //             setLoading(true);
 //             try {
-//                 const response = await fetch('http://127.0.0.1:5000/courses/admin', {
+//                 const response = await fetch('/courses/admin', {
 //                     method: 'GET',
 //                     headers: {
 //                         'Content-Type': 'application/json',
@@ -49,7 +49,7 @@
 
 //     const handleUpdateCourse = async () => {
 //         try {
-//             const response = await fetch('http://127.0.0.1:5000/courses/admin', {
+//             const response = await fetch('/courses/admin', {
 //                 method: 'PATCH',
 //                 headers: {
 //                     'Content-Type': 'application/json',
@@ -83,7 +83,7 @@
 
 //     const handleDeleteCourse = async (courseId) => {
 //         try {
-//             const response = await fetch(`http://127.0.0.1:5000/courses/admin/${courseId}`, {
+//             const response = await fetch(`/courses/admin/${courseId}`, {
 //                 method: 'DELETE',
 //                 headers: {
 //                     'Content-Type': 'application/json',
@@ -224,7 +224,7 @@ const AdminCoursesPage = () => {
         const fetchCourses = async () => {
             setLoading(true);
             try {
-                const response = await fetch('http://127.0.0.1:5000/courses/admin', {
+                const response = await fetch('/courses/admin', {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',
@@ -255,7 +255,7 @@ const AdminCoursesPage = () => {
 
     const handleUpdateCourse = async () => {
         try {
-            const response = await fetch('http://127.0.0.1:5000/courses/admin', {
+            const response = await fetch('/courses/admin', {
                 method: 'PATCH',
                 headers: {
                     'Content-Type': 'application/json',
@@ -289,7 +289,7 @@ const AdminCoursesPage = () => {
 
     const handleDeleteCourse = async (courseId) => {
         try {
-            const response = await fetch(`http://127.0.0.1:5000/courses/admin/${courseId}`, {
+            const response = await fetch(`/courses/admin/${courseId}`, {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json',

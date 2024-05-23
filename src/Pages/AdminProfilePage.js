@@ -12,7 +12,7 @@ const AdminProfilePage = () => {
     useEffect(() => {
         const fetchProfile = async () => {
             try {
-                const response = await fetch('http://127.0.0.1:5000/profile/admin', {
+                const response = await fetch('/profile/admin', {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',
@@ -36,7 +36,7 @@ const AdminProfilePage = () => {
 
     const handleUpdateProfile = async () => {
         try {
-            const response = await fetch('http://127.0.0.1:5000/profile/admin', {
+            const response = await fetch('/profile/admin', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

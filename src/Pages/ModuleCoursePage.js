@@ -13,7 +13,7 @@
 //     useEffect(() => {
 //         const fetchModules = async () => {
 //             try {
-//                 const response = await fetch(`http://127.0.0.1:5000/student/course/${courseId}/module`, {
+//                 const response = await fetch(`/student/course/${courseId}/module`, {
 //                     headers: {
 //                         'Content-Type': 'application/json',
 //                         'jwttoken': token,
@@ -73,7 +73,7 @@ const ModuleCoursePage = () => {
     useEffect(() => {
         const fetchModules = async () => {
             try {
-                const response = await fetch(`http://127.0.0.1:5000/student/course/${courseId}/module`, {
+                const response = await fetch(`/student/course/${courseId}/module`, {
                     headers: {
                         'Content-Type': 'application/json',
                         'jwttoken': token,

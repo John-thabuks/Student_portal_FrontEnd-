@@ -12,7 +12,7 @@ const CheckoutPage = () => {
     useEffect(() => {
         const initiateCheckout = async () => {
             try {
-                const response = await fetch(`http://127.0.0.1:5000/checkout/${courseId}`, {
+                const response = await fetch(`/checkout/${courseId}`, {
                     headers: {
                         'Content-Type': 'application/json',
                         'jwttoken': ` ${token}`,

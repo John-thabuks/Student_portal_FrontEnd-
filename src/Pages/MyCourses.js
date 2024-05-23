@@ -12,7 +12,7 @@ const MyCourses = () => {
     useEffect(() => {
         const fetchMyCourses = async () => {
             try {
-                const response = await fetch('http://127.0.0.1:5000/courses/student', {
+                const response = await fetch('/courses/student', {
                     headers: {
                         'Content-Type': 'application/json',
                         'jwttoken': token,
@@ -32,7 +32,7 @@ const MyCourses = () => {
 
         const checkUserType = async () => {
             try {
-                const response = await fetch('http://127.0.0.1:5000/profile/student', {
+                const response = await fetch('/profile/student', {
                     headers: {
                         'Content-Type': 'application/json',
                         'jwttoken': token,

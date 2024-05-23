@@ -17,8 +17,8 @@ const LoginPage = () => {
 
         try {
             const loginEndpoint = userType === 'student'
-                ? 'http://127.0.0.1:5000/student/login'
-                : 'http://127.0.0.1:5000/admin/login';
+                ? '/student/login'
+                : '/admin/login';
 
             const response = await fetch(loginEndpoint, {
                 method: 'POST',

@@ -1,4 +1,3 @@
-// src/components/ContentBody.js
 import React from 'react';
 
 function ContentBody() {

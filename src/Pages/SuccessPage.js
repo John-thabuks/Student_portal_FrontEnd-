@@ -19,7 +19,7 @@
 //     useEffect(() => {
 //         const fetchReceipt = async () => {
 //             try {
-//                 const response = await fetch(`http://127.0.0.1:5000/success?course_title=${encodeURIComponent(courseTitle)}&course_price=${encodeURIComponent(coursePrice)}`, {
+//                 const response = await fetch(`/success?course_title=${encodeURIComponent(courseTitle)}&course_price=${encodeURIComponent(coursePrice)}`, {
 //                     headers: {
 //                         'Content-Type': 'application/json',
 //                         'jwttoken': token,
@@ -94,7 +94,7 @@ const SuccessPage = () => {
     useEffect(() => {
         const fetchReceipt = async () => {
             try {
-                const response = await fetch(`http://127.0.0.1:5000/success?course_title=${encodeURIComponent(courseTitle)}&course_price=${encodeURIComponent(coursePrice)}&course_id=${encodeURIComponent(courseId)}`, {
+                const response = await fetch(`/success?course_title=${encodeURIComponent(courseTitle)}&course_price=${encodeURIComponent(coursePrice)}&course_id=${encodeURIComponent(courseId)}`, {
                     headers: {
                         'Content-Type': 'application/json',
                         'jwttoken': token,

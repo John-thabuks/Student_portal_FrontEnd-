@@ -28,7 +28,7 @@ const ProfilePage = () => {
                     return;
                 }
 
-                const response = await fetch(`http://127.0.0.1:5000/profile/student`, {
+                const response = await fetch(`/profile/student`, {
                     method: 'GET',
                     headers: {
                         'jwttoken': token
@@ -56,7 +56,7 @@ const ProfilePage = () => {
     const handleUpdate = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch(`http://127.0.0.1:5000/profile/student`, {
+            const response = await fetch(`/profile/student`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

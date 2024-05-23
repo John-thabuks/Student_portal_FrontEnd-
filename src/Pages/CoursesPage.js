@@ -14,7 +14,7 @@
 //     useEffect(() => {
 //         const fetchCourses = async () => {
 //             try {
-//                 const response = await fetch('http://127.0.0.1:5000/course', {
+//                 const response = await fetch('/course', {
 //                     headers: {
 //                         'Content-Type': 'application/json',
 //                         'jwttoken': token,
@@ -33,7 +33,7 @@
 
 //         const fetchPurchasedCourses = async () => {
 //             try {
-//                 const response = await fetch('http://127.0.0.1:5000/courses/student', {
+//                 const response = await fetch('/courses/student', {
 //                     headers: {
 //                         'Content-Type': 'application/json',
 //                         'jwttoken': token,
@@ -110,7 +110,7 @@ const CoursesPage = () => {
     useEffect(() => {
         const fetchCourses = async () => {
             try {
-                const response = await fetch('http://127.0.0.1:5000/course', {
+                const response = await fetch('/course', {
                     headers: {
                         'Content-Type': 'application/json',
                         'jwttoken': token,
@@ -129,7 +129,7 @@ const CoursesPage = () => {
 
         const fetchPurchasedCourses = async () => {
             try {
-                const response = await fetch('http://127.0.0.1:5000/courses/student', {
+                const response = await fetch('/courses/student', {
                     headers: {
                         'Content-Type': 'application/json',
                         'jwttoken': token,

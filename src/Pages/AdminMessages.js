@@ -16,7 +16,7 @@
 
 //     const fetchMessages = async () => {
 //         try {
-//             const response = await fetch('http://127.0.0.1:5000/messages/admin', {
+//             const response = await fetch('/messages/admin', {
 //                 method: 'GET',
 //                 headers: {
 //                     'Content-Type': 'application/json',
@@ -43,7 +43,7 @@
 
 //     const handleSend = async () => {
 //         try {
-//             const response = await fetch('http://127.0.0.1:5000/messages/admin', {
+//             const response = await fetch('/messages/admin', {
 //                 method: 'POST',
 //                 headers: {
 //                     'Content-Type': 'application/json',
@@ -85,7 +85,7 @@
 //         }
 
 //         try {
-//             const response = await fetch(`http://127.0.0.1:5000/studentsmail?email=${inputEmail}`, {
+//             const response = await fetch(`/studentsmail?email=${inputEmail}`, {
 //                 method: 'GET',
 //                 headers: {
 //                     'Content-Type': 'application/json',
@@ -186,7 +186,7 @@ const AdminMessages = () => {
 
     const fetchMessages = async () => {
         try {
-            const response = await fetch('http://127.0.0.1:5000/messages/admin', {
+            const response = await fetch('/messages/admin', {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
@@ -213,7 +213,7 @@ const AdminMessages = () => {
 
     const handleSend = async () => {
         try {
-            const response = await fetch('http://127.0.0.1:5000/messages/admin', {
+            const response = await fetch('/messages/admin', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -255,7 +255,7 @@ const AdminMessages = () => {
         }
 
         try {
-            const response = await fetch(`http://127.0.0.1:5000/studentsmail?email=${inputEmail}`, {
+            const response = await fetch(`/studentsmail?email=${inputEmail}`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',

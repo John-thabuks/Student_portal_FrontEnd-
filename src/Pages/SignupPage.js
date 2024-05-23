@@ -18,9 +18,9 @@ const SignupPage = () => {
         try {
             let signupEndpoint = '';
             if (userType === 'student') {
-                signupEndpoint = 'http://127.0.0.1:5000/signup/student';
+                signupEndpoint = '/signup/student';
             } else if (userType === 'admin') {
-                signupEndpoint = 'http://127.0.0.1:5000/signup/admin';
+                signupEndpoint = '/signup/admin';
             }
 
             const response = await fetch(signupEndpoint, {
