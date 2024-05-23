@@ -1,0 +1,55 @@
+.ModuleCoursePage {
+  margin-top: -10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  font-family: "Roboto", sans-serif;
+}
+
+.ModuleCoursePage h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.ModuleCoursePage ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.ModuleCoursePage li {
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ModuleCoursePage li h4 {
+  margin-bottom: 10px;
+}
+
+.ModuleCoursePage li p {
+  color: #555;
+}
+
+.back-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-bottom: 250px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 250px;
+}
+
+.back-button:hover {
+  background-color: #0056b3; /* Darker background color on hover */
+}

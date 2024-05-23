@@ -1,0 +1,48 @@
+.contact-us {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #f4f4f4;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 100px;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.heading {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #ff6b6b;
+}
+
+.section p {
+  margin-bottom: 5px;
+  color: #444;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-icons a {
+  color: #ff6b6b;
+  font-size: 2rem;
+  margin-left: 10px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ff8c6b;
+}
+
+/* Styling for copyright */
+.copyright {
+  margin-top: 30px;
+  font-size: 0.8rem;
+  color: #777;
+  text-align: center;
+}

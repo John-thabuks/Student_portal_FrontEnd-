@@ -1,0 +1,65 @@
+.checkout-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  background: linear-gradient(135deg, #6b8cff, #42e6a4);
+  color: #ffffff;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.checkout-container .error {
+  background-color: rgba(255, 0, 0, 0.8);
+  color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-container .success {
+  background-color: rgba(0, 128, 0, 0.8);
+  color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-container h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.checkout-container p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.checkout-container .loading {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.8);
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}

@@ -1,0 +1,53 @@
+/* src/Pages/CoursesPage.css */
+.courses-container {
+  padding: 2em;
+  overflow: auto;
+  margin-bottom: 300px;
+}
+
+.courses-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.course-item {
+  border: 1px solid #ccc;
+  padding: 1em;
+  border-radius: 8px;
+  width: calc(33.333% - 2em);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.course-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.course-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.course-item h3 {
+  margin: 0.5em 0;
+}
+
+.course-item p {
+  font-size: 0.9em;
+}
+
+.course-item button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.course-item button:hover {
+  background-color: #218838;
+}
