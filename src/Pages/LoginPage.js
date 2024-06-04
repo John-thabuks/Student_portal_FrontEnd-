@@ -17,8 +17,8 @@ const LoginPage = () => {
 
         try {
             const loginEndpoint = userType === 'student'
-                ? '/student/login'
-                : '/admin/login';
+                ? '/api/student/login'
+                : '/api/admin/login';
 
             const response = await fetch(loginEndpoint, {
                 method: 'POST',
