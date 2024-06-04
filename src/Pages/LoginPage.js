@@ -12,13 +12,15 @@ const LoginPage = () => {
     const { login } = useAuth(); // Now includes role
     const navigate = useNavigate();
 
+    const apiUrl = process.env.REACT_APP_API_URL;
+
     const handleLogin = async (e) => {
         e.preventDefault();
 
         try {
             const loginEndpoint = userType === 'student'
-                ? '/api/student/login'
-                : '/api/admin/login';
+                ? `${apiUrl}/api/student/login`
+                : `${apiUrl}/api/admin/login`;
 
             const response = await fetch(loginEndpoint, {
                 method: 'POST',
